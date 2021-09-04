@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshi Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main class='main'>
+        <nav class='navBar'>
+          <h1>Himanshi Portfolio</h1>
+          <div class='navigationMenu'>
+            <a href="#aboutMe">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contactForm">Let's Connect!</a>
+          <div>
+        </nav>
+        <section class='heroSection'>
+          <img 
+          class='profileImage'
+          src="/image.jpeg" width="500" height="500"/>
+          <div class='herosectionDetails'>
+            <h1>Himanshi</h1>
+            <h3>Student at Guru Jambheshwar University Of Science and Technology</h3>
+          </div>
+        </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p> I am fresher . I intend to be a part of an organization where I can constanttly learn and develop my technical and management skills and makr best use of it for the growth of the organization. I look forward to establishing myself by adapting new technologies and implement them for the betterment of the business and society. </p>
+      </section>
+      <section class='skillsAndHobbies'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='/html.png'>
+          <img title='CSS' src='./css.png'>
+          <img title='python' src='./python.png'>
+          <img title='SQL' src='./sql.jpg'>
+          <img title='C' src='./c.png'>
+          <img title='C++' src='./c.jpg'>
+        </div>
+        <div class='hobbies' id='hobbies'>
+          <h1 class='cardHeading'>Hobbies</h1>
+          <div class='hobbiesContainer'>
+            <img src='./makeup1.jpeg'/>
+            <div class='hobbiesDescription'>
+              <h4>Makeup</h4>
+            </div>
+          </div>
+          <div class='  hobbiesContainer'>
+            <img src='./makeup.png'/>
+            <div class='hobbiesDescription'>
+              <h4>styling</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+        <section class='contactForm' id='contactForm'>
+          <h1>Let's Connect!</h2>
+          <div class='formGroup'>
+            <label for='name'>Enter Full Name</label><br/>
+            <input type='text' id='name' placeholder='Full Name'/>
+          </div>
+          <div class='formGroup'>
+            <label for='email'>Email</label><br/>
+            <input type='text' id='email' placeholder='Email'/>
+          </div>
+          <div class='formGroup'>
+            <label for='message'>Message</label><br/>
+            <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+          </div>
+          <button class='submitButton' onClick={submit()}>Connect</button>
+        </section>
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>
